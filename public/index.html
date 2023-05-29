@@ -86,6 +86,14 @@ http://www.templatemo.com/tm-500-fluid-gallery
 
                 </nav>
             </div> 
+			<div class="swiper-container">
+				<div class="swiper-wrapper">
+				  <div class="swiper-slide" style="background-image:url('https://images.unsplash.com/photo-1462392246754-28dfa2df8e6b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80')"></div>
+				  <div class="swiper-slide" style="background-image:url('https://images.unsplash.com/photo-1596609548086-85bbf8ddb6b9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80')"></div>
+				  <div class="swiper-slide" style="background-image:url('https://images.unsplash.com/photo-1594969155368-f19485a9d88c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80')"></div>
+				  <div class="swiper-slide" style="background-image:url('https://images.unsplash.com/photo-1633464130613-0a9154299ac2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1073&q=80')"></div>
+				</div>
+			  </div>
 
             <ul class="cd-hero-slider">
 
@@ -718,8 +726,22 @@ http://www.templatemo.com/tm-500-fluid-gallery
         <script src="js/bootstrap.min.js"></script>             <!-- Bootstrap js (v4-alpha.getbootstrap.com/) -->
         <script src="js/hero-slider-main.js"></script>          <!-- Hero slider (https://codyhouse.co/gem/hero-slider/) -->
         <script src="js/jquery.magnific-popup.min.js"></script> <!-- Magnific popup (http://dimsemenov.com/plugins/magnific-popup/) -->
-        
+         <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+		<script>
+		  document.addEventListener("DOMContentLoaded", function() {
+			var swiper = new Swiper('.swiper-container', {
+			  slidesPerView: 'auto',
+			  spaceBetween: 5,
+			  loop: true,
+			  autoplay: {
+				delay: 3000,
+				disableOnInteraction: false,
+			  },
+			});
+		  });
+		</script>
         <script>
+		
 
             function adjustHeightOfPage(pageNo) {
 
